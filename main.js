@@ -286,13 +286,13 @@ class World {
       this.sound = new THREE.Audio(listener);
       const audioLoader = new THREE.AudioLoader();
       audioLoader.load(
-      "https://od.lk/s/OTZfOTY0MjQ0NjRf/Bar%C4%B1%C5%9F%20Man%C3%A7o%20-%20Kara%20Sevda.mp3",
+      "./Barış Manço - Kara Sevda.mp3",
       buffer => {
         this.sound.setBuffer(buffer);
         this.sound.setLoop(false);
         this.sound.setVolume(0.5);
         this.sound.play();
-        this.analyser = new THREE.AudioAnalyser(this.sound, 32);
+        this.analyser = new THREE.AudioAnalyser(this.sound, 2048);
         // get the average frequency of the sound
         const data = this.analyser.getAverageFrequency();
         this.isRunning = true;
