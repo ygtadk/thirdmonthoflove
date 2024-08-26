@@ -286,7 +286,7 @@ class World {
       this.sound = new THREE.Audio(listener);
       const audioLoader = new THREE.AudioLoader();
       audioLoader.load(
-      "https://assets.codepen.io/74321/ukulele.mp3",
+      "https://od.lk/s/OTZfOTY0MjQ0NjRf/Bar%C4%B1%C5%9F%20Man%C3%A7o%20-%20Kara%20Sevda.mp3",
       buffer => {
         this.sound.setBuffer(buffer);
         this.sound.setLoop(false);
